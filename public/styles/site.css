@@ -1,0 +1,74 @@
+a {
+  text-decoration: none;
+  color: inherit; }
+
+img {
+  max-width: 100%; }
+
+body {
+  padding: 25px;
+  background-color: whitesmoke; }
+
+div[class^="border"] {
+  position: fixed;
+  background-color: #75b123;
+  z-index: 9999; }
+
+.border-top, .border-bottom {
+  left: 0;
+  height: 25px;
+  width: 100%; }
+
+.border-top {
+  top: 0; }
+
+.border-bottom {
+  bottom: 0; }
+
+.border-left, .border-right {
+  top: 0;
+  height: 100%;
+  width: 25px; }
+
+.border-left {
+  left: 0; }
+
+.border-right {
+  right: 0; }
+
+.sidebar {
+  z-index: 9999;
+  position: fixed;
+  background-color: white;
+  height: calc(100vh - 50px);
+  background-color: whitesmoke; }
+  .sidebar .sidebar-inner {
+    padding: 25px; }
+
+.brand h1, .brand h2 {
+  margin: 0 0 25px 0;
+  background-color: #75b123;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 37.5px; }
+.brand span {
+  font-weight: bold; }
+
+.item img {
+  filter: grayscale(100%); }
+.item:before {
+  z-index: 5;
+  position: absolute;
+  content: " ";
+  background-color: rgba(117, 177, 35, 0.5);
+  height: 100%;
+  width: 100%; }
+.item:hover:before {
+  background-color: transparent; }
+.item:hover img {
+  filter: grayscale(0%); }
+
+/*# sourceMappingURL=site.css.map */
