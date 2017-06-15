@@ -107,3 +107,10 @@ div[class^="border"]{
 	min-height: 100vh;
 	background-color: white;
 }
+
+
+@media (max-width: 940px){
+	canvas{
+		display: none;
+	}
+}
