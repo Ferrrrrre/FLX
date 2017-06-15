@@ -3,11 +3,10 @@ extends ../layouts/default
 	
 mixin project(project)
 		a(href="/project/" + project.slug)
-			.pure-u-lg-1-2.item
+			.pure-u-lg-1-3.item
 				img(src=project.heroImage.url)
 
 
 block content
 	.grid
-		each project in data.projects.results
-			+project(project)
+		

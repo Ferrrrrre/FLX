@@ -9,7 +9,7 @@ html
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 
-		title= title || 'Portfolio Ferre Lambert'
+		title= title + ' • Ferre Lambert' || 'Portfolio • Ferre Lambert'
 		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 
 		link(href="/styles/reset.css", rel="stylesheet")
@@ -43,22 +43,20 @@ html
 
 	//- HTML BODY
 	body
+		.fancy
+				canvas#pixies
+				.background
 		.border-top
 		.border-right
 		.border-bottom
 		.border-left
 
-		.pure-g
-			.pure-u-lg-1-5.pure-u-md-1-3.pure-u-sm-1-3.pure-u-1-1.sidebar
-				.sidebar-inner
-					.brand
-						h1
-							a(href='/') Hi, I'm
-								span  Ferre
-								<br> Digital Creative</br>
-						img(src="../images/me.jpg")
-				
-			.pure-u-lg-4-5.pure-u-md-2-3.pure-u-sm-2-3.pure-u-1-1.content
+		section.intro
+			.brand
+				h1 Hi, I'm
+					span  Ferre
+					<br> Digital Creative</br>
+		section.content
 				//- BODY
 				
 
@@ -89,8 +87,6 @@ html
 		script(src='/js/jquery/jquery-1.11.3.min.js')
 
 		//- Customise which Bootstrap javascript files are served by including
-		//- them specifically here, instead of bootstrap-3.3.5.min.js
-		script(src='/js/bootstrap/bootstrap-3.3.5.min.js')
 
 		script(src="//npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js")
 
@@ -101,6 +97,7 @@ html
 
 		//- Add scripts that are globally required by your site here.
 		script(src="js/script.js")
+		script(src="js/pixie.js")
 
 		//- Include template-specific javascript files by extending the js block
 		block js
