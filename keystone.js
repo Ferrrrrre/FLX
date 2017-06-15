@@ -23,6 +23,7 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
+	'mongo' : 'mongodb://Ferre:lockeaccount@ds127842.mlab.com:27842/flx'
 });
 
 // Load your project's Models
