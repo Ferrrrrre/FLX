@@ -24,7 +24,8 @@ keystone.init({
 	'auth': true,
 	'user model': 'User',
 	'mongo' : 'mongodb://Ferre:lockeaccount@ds127842.mlab.com:27842/flx',
-	'port' : process.env.PORT || 8000
+	'port' : process.env.PORT || 8000,
+	'cloudinary config' : 'cloudinary://141936253558936:rTSlZYSPRtSWHvC93z7QGxk88uA@wolk'
 });
 
 // Load your project's Models
