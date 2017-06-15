@@ -25,7 +25,8 @@ keystone.init({
 	'user model': 'User',
 	'mongo' : 'mongodb://Ferre:lockeaccount@ds127842.mlab.com:27842/flx',
 	'port' : process.env.PORT || 8000,
-	'cloudinary config' : 'cloudinary://141936253558936:rTSlZYSPRtSWHvC93z7QGxk88uA@wolk'
+	'cloudinary config' : 'cloudinary://141936253558936:rTSlZYSPRtSWHvC93z7QGxk88uA@wolk',
+	'cookie secret' : 'db3140f919488da920a128d28ddc0ee8d1228ded8b8e1f789c63338a3130d725260576c147452db640edc8f3fddfbd5cbac7dfab17085f983856743498be23ae'
 });
 
 // Load your project's Models
