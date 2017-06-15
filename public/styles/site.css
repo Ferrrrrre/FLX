@@ -62,7 +62,7 @@ div[class^="border"] {
   .brand h1 {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20vh;
+    font-size: 10vw;
     position: absolute;
     font-weight: bold;
     top: 0;
@@ -78,3 +78,5 @@ div[class^="border"] {
 .content {
   min-height: 100vh;
   background-color: white; }
+
+/*# sourceMappingURL=site.css.map */
