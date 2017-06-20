@@ -10,7 +10,7 @@ var rint2 = 70;
 $(document).ready(function(){
   WIDTH = window.innerWidth;
   HEIGHT = window.innerHeight;
-	$('.background').width(WIDTH).height(HEIGHT);
+	
 	canvas = document.getElementById('pixies');
 	$(canvas).attr('width', WIDTH).attr('height',HEIGHT);
 	con = canvas.getContext('2d');
@@ -22,6 +22,7 @@ $(document).ready(function(){
 	setInterval(draw,rint2);
 
 });
+
 
 function draw() {
 	con.clearRect(0,0,WIDTH,HEIGHT);

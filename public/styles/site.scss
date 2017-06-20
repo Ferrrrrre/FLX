@@ -24,7 +24,9 @@ body{
 .background{
 	position: absolute;
 	top: 0;
-	background-image: url('https://static.pexels.com/photos/167698/pexels-photo-167698.jpeg');
+	height: 100%;
+	width: 100%;
+	background-image: url('../images/background.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -46,57 +48,35 @@ div[class^="border"]{
 	z-index: 9999;
 }
 
-.border-top, .border-bottom{
-	left: 0;
-	height: $theme_gutter;
-	width: 100%;
-}
-
-.border-top{
-	top: 0;
-}
-
-.border-bottom{
-	bottom: 0;
-}
-
-.border-left, .border-right{
-	top: 0;
-	height: 100%;
-	width: $theme_gutter;
-}
-
-.border-left{
-	left: 0;
-}
-
-.border-right{
-	right: 0;
-}
-
 .intro{
+	z-index: -1;
 	height: 100vh;
 	position: relative;
 	color: white;
-}
 
-.brand{
-	text-align: center;
-	//position: relative;
-	position: absolute;
-	top: 0;
+	.brand{
+		text-align: center;
+		position: fixed;
+		top: 0;
 	    bottom: 0;
 	    left: 0;
 	    right: 0;
 	    margin: auto;
 	    width: 80vw;
 	    height: 50vh;
-	    text-shadow: rgba(0,0,0,0.5) 1px 1px 1px;
+
+	    h1{
+	    	font-size: 10vw;
+	    }
+	}
+}
+
+.brand{
+	text-shadow: rgba(0,0,0,0.5) 1px 1px 1px;
 
 	h1{
 		margin: 0;
 		font-family: 'Montserrat', sans-serif;
-		font-size: 10vw;
 		font-weight: bold;
 		
 	}
@@ -113,8 +93,9 @@ div[class^="border"]{
 }
 
 .content{
-	
+	min-height: 100vh;
 	background-color: white;
+	box-shadow: rgba(0,0,0,0.8) 0px 0px 11px -2px
 }
 
 
