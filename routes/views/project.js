@@ -23,6 +23,7 @@ exports = module.exports = function (req, res) {
 
 		q.exec(function (err, result) {
 			locals.data.project = result;
+			console.log(locals.data.project.title);
 			next(err);
 		});
 
@@ -41,5 +42,7 @@ exports = module.exports = function (req, res) {
 	});
 
 	// Render the view
-	view.render('project');
+	view.render('project',{
+		title : locals.data.project.title
+	});
 };

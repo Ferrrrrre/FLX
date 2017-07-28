@@ -1,7 +1,11 @@
 extends ../layouts/default
 
 mixin project(project)
-	p= project.slug
+	p= data.project.title
 
 block content
+	h1 
+		a(href="/") #{'<'} Go back
 	h1 welkom
+	p= data.project.content.extended
+	p= result

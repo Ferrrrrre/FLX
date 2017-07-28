@@ -2,12 +2,24 @@ extends ../layouts/default
 
 	
 mixin project(project)
-		a(href="/project/" + project.slug)
-			.pure-u-lg-1-4.item
+		//-a(href="/project/" + project.slug)
+		
+		.pure-u-lg-1-4.item
 				img(src=project.heroImage.url)
 
 
 block content
-	.grid
-		each project in data.projects.results
-			+project(project)
+	.fancy
+		canvas#pixies
+		.background
+
+	section.intro
+		.brand
+			h1 Hi, I'm
+				span  Ferre
+				<br> Digital Creative</br>
+			h2 a jack of all trades with a liking for Design &amp; Front-end Development
+	section.content
+		.grid
+			each project in data.projects.results
+				+project(project)
