@@ -99,6 +99,23 @@ div[class^="border"]{
 }
 
 
+.item{
+	margin: 5px;
+}
+
+.choose{
+	text-align: center;
+
+	h3{
+		padding: 15px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2.5em;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+
+
 @media (max-width: 940px){
 	canvas{
 		display: none;

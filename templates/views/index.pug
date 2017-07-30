@@ -3,8 +3,12 @@ extends ../layouts/default
 	
 mixin project(project)
 		//-a(href="/project/" + project.slug)
-		
-		.pure-u-lg-1-4.item
+		-	var classes = []
+		each category in project.categories
+			-	classes.push(category.key)
+
+		div(class="pure-u-lg-1-4 pure-u-md-1-3 pure-u-sm-1-2 pure-u-1-1 item-container " + classes.join(" "))
+			.item
 				img(src=project.heroImage.url)
 
 
@@ -20,6 +24,15 @@ block content
 				<br> Digital Creative</br>
 			h2 a jack of all trades with a liking for Design &amp; Front-end Development
 	section.content
+		div.choose
+			h3 Work 
+			.button-group.filter-button-group
+				button(data-filter="*") Show all
+				button(data-filter="design") Design
+				button(data-filter="development") Development
+				button(data-filter="video") Video
+				button(data-filter="project") Project
+
 		.grid
 			each project in data.projects.results
 				+project(project)

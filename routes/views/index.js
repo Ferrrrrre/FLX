@@ -35,21 +35,17 @@ exports = module.exports = function (req, res) {
 	view.on('init', function (next) {
 
 		var q = keystone.list('Project').paginate({
-			
 			filters: {
 
 			},
 		})
 			.sort('title')
-			.populate('clients');
-
-
-
-
+			.populate('clients categories');
 
 		q.exec(function (err, results) {
 			locals.data.projects = results;
 			console.log(results);
+
 			next(err);
 		});
 	});

@@ -3,11 +3,15 @@ $(function(){
 
 	var grid = $('.grid').isotope({
 		  // options
-		  itemSelector: '.item',
-		  masonry: {
-		  
-		}
+		  itemSelector: '.item-container',
+          sortBy: 'random'
 	});
+
+    $('.filter-button-group').on( 'click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        grid.isotope({ filter: filterValue });
+        console.log($("." + filterValue));
+    });
 
 	var depth = 100;
 	
@@ -38,9 +42,6 @@ $(function(){
     // update last scroll position to current position
     lastY = currY;
 	});
-
-
-
 
 });
 
