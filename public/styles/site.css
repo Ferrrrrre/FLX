@@ -75,11 +75,27 @@ div[class^="border"] {
 .choose {
   text-align: center; }
   .choose h3 {
-    padding: 15px;
+    padding: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5em;
     text-transform: uppercase;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #85d62d; }
+
+.button-group {
+  padding: 0 0 30px 0; }
+
+button {
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 5px;
+  border: 2px solid #85d62d;
+  color: #85d62d;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100; }
+  button:hover, button.is-checked {
+    color: white;
+    background-color: #85d62d; }
 
 @media (max-width: 940px) {
   canvas {
