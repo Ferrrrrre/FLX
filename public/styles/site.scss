@@ -170,6 +170,7 @@ button{
 	color: $theme_color;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 100;
+	margin: 0 5px;
 
 	&:hover, &.is-checked{
 		color: white;
