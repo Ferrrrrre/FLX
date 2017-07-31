@@ -8,19 +8,19 @@ var rint = 50;
 var rint2 = 70;
 
 $(document).ready(function(){
-  WIDTH = window.innerWidth;
-  HEIGHT = window.innerHeight;
-	
-	canvas = document.getElementById('pixies');
-	$(canvas).attr('width', WIDTH).attr('height',HEIGHT);
-	con = canvas.getContext('2d');
-	for(var i = 0; i < 50; i++) {
-		pxs[i] = new Circle();
-		pxs[i].reset();
+	WIDTH = window.innerWidth;
+	HEIGHT = window.innerHeight;
+	if(document.getElementById('pixies')){
+		canvas = document.getElementById('pixies');
+		$(canvas).attr('width', WIDTH).attr('height',HEIGHT);
+		con = canvas.getContext('2d');
+		for(var i = 0; i < 50; i++) {
+			pxs[i] = new Circle();
+			pxs[i].reset();
+		}
+		setInterval(draw,rint);
+		setInterval(draw,rint2);
 	}
-	setInterval(draw,rint);
-	setInterval(draw,rint2);
-
 });
 
 

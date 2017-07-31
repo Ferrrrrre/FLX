@@ -17,6 +17,8 @@ exports = module.exports = function (req, res) {
 		projects: [],
 	};
 
+	locals.data.title = "Home";
+
 	// Load the current post
 	view.on('init', function (next) {
 
@@ -44,15 +46,13 @@ exports = module.exports = function (req, res) {
 
 		q.exec(function (err, results) {
 			locals.data.projects = results;
-			console.log(results);
+			//console.log(results);
 
 			next(err);
 		});
 	});
 
 	// Render the view
-	view.render('index', {
-		title : "Home"
-	});
+	view.render('index');
 
 };

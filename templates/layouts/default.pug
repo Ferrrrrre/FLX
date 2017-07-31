@@ -9,7 +9,7 @@ html
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 
-		title= title + ' • Ferre Lambert' || 'Portfolio • Ferre Lambert'
+		title= locals.data.title + ' • Ferre Lambert' || 'Portfolio • Ferre Lambert'
 		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 
 		link(href="/styles/reset.css", rel="stylesheet")
@@ -20,6 +20,7 @@ html
 		link(href="/styles/site.css", rel="stylesheet")
 
 		link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900", rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700", rel="stylesheet")
 
 		//- This file provides the default styling for the KeystoneJS Content Editor
 		if user && user.canAccessKeystone
@@ -82,8 +83,8 @@ html
 			script(src='/keystone/js/content/editor.js')
 
 		//- Add scripts that are globally required by your site here.
-		script(src="js/script.js")
-		script(src="js/pixie.js")
+		script(src="/js/script.js")
+		script(src="/js/pixie.js")
 
 		//- Include template-specific javascript files by extending the js block
 		block js

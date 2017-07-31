@@ -5,6 +5,9 @@ a {
 img {
   max-width: 100%; }
 
+strong {
+  font-weight: inherit; }
+
 .fancy {
   position: fixed;
   height: 100vh;
@@ -67,7 +70,37 @@ div[class^="border"] {
 .content {
   min-height: 100vh;
   background-color: white;
+  padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 11px -2px; }
+
+.about {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100; }
+  .about p {
+    margin-top: 15px;
+    line-height: 30px; }
+  .about:after {
+    margin: 30px auto 0 auto;
+    display: block;
+    content: "";
+    background-color: lightgrey;
+    opacity: .5;
+    width: 40%;
+    height: 2px; }
+
+.me {
+  margin: 15px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../images/me.jpg");
+  background-size: cover; }
+
+.quote {
+  font-style: italic; }
 
 .item {
   margin: 5px; }
@@ -97,6 +130,49 @@ button {
     color: white;
     background-color: #85d62d; }
 
+.single-project {
+  font-family: 'Montserrat', sans-serif;
+  padding: 30px; }
+  .single-project .back {
+    text-transform: uppercase;
+    font-weight: 100;
+    color: lightgrey; }
+    .single-project .back:hover {
+      color: #85d62d; }
+  .single-project .project-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #85d62d; }
+    .single-project .project-title:after {
+      margin: 30px 0 0 0;
+      display: block;
+      content: "";
+      background-color: lightgrey;
+      opacity: .5;
+      width: 40%;
+      height: 2px; }
+  .single-project .project-info {
+    padding-right: 15px; }
+    .single-project .project-info h1 {
+      font-weight: 100;
+      font-family: 'Open Sans', sans-serif; }
+    .single-project .project-info p, .single-project .project-info h6, .single-project .project-info ol {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 25px;
+      margin: 15px 0;
+      font-weight: 100; }
+    .single-project .project-info iframe {
+      width: 100%; }
+    .single-project .project-info img {
+      max-width: 100%;
+      height: auto; }
+    .single-project .project-info a {
+      color: #85d62d; }
+    .single-project .project-info em {
+      font-style: italic; }
+
 @media (max-width: 940px) {
   canvas {
     display: none; } }
+
+/*# sourceMappingURL=site.css.map */

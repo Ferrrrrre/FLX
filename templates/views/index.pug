@@ -2,14 +2,14 @@ extends ../layouts/default
 
 	
 mixin project(project)
-		//-a(href="/project/" + project.slug)
-		-	var classes = []
-		each category in project.categories
-			-	classes.push(category.key)
+		a(href="/project/" + project.slug)
+			-	var classes = []
+			each category in project.categories
+				-	classes.push(category.key)
 
-		div(class="pure-u-lg-1-4 pure-u-md-1-3 pure-u-sm-1-2 pure-u-1-1 item-container " + classes.join(" "))
-			.item
-				img(src=project.heroImage.url)
+			div(class="pure-u-lg-1-4 pure-u-md-1-3 pure-u-sm-1-2 pure-u-1-1 item-container " + classes.join(" "))
+				.item
+					img(src=project.heroImage.url)
 
 
 block content
@@ -23,7 +23,13 @@ block content
 				span  Ferre
 				<br> Digital Creative</br>
 			h2 a jack of all trades with a liking for Design &amp; Front-end Development
+
 	section.content
+		div.about.pure-u-lg-1-3.pure-u-md-1-2.pure-u-sm-1-1.pure-u-1-1
+			div.me
+			p Hello, I'm Ferre Lambert and I'm an Antwerp-based 'Digital Creative'. Going through life with a smile, I like to creatively solve problems with the tools at hand, both online as offline.
+			p Do take a look at my work and do not hesitate to ask if what you wish, isn't displayed or what TV series I'm currently recommending.
+			p.quote "Adventure is out there!"
 		div.choose
 			h3 Work 
 			.button-group.filter-button-group
