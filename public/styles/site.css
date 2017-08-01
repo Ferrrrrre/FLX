@@ -141,6 +141,35 @@ button {
     color: white;
     background-color: #85d62d; }
 
+footer {
+  background-color: whitesmoke;
+  padding: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  line-height: 32px; }
+  footer:before {
+    content: "";
+    width: 100%;
+    background-color: red;
+    height: 5px; }
+  footer a {
+    color: lightgrey; }
+    footer a:hover {
+      color: #85d62d; }
+  footer .right a {
+    font-size: 2.2em;
+    margin: 0 5px; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clearfix {
+  overflow: auto;
+  zoom: 1; }
+
 .single-project {
   font-family: 'Montserrat', sans-serif;
   padding: 30px; }
