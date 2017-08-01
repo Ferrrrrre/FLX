@@ -99,6 +99,16 @@ div[class^="border"] {
   background-image: url("../images/me.jpg");
   background-size: cover; }
 
+.cv {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 5px;
+  border: 2px solid #85d62d;
+  color: #85d62d; }
+  .cv:hover {
+    background-color: #85d62d;
+    color: white; }
+
 .quote {
   font-style: italic; }
 
@@ -175,3 +185,5 @@ button {
 @media (max-width: 940px) {
   canvas {
     display: none; } }
+
+/*# sourceMappingURL=site.css.map */
