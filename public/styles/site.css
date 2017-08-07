@@ -5,6 +5,10 @@ a {
 img {
   max-width: 100%; }
 
+body {
+  position: relative;
+  min-height: 100vh; }
+
 strong {
   font-weight: inherit; }
 
@@ -146,7 +150,10 @@ footer {
   padding: 30px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
-  line-height: 32px; }
+  line-height: 32px;
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 60px); }
   footer:before {
     content: "";
     width: 100%;
@@ -169,6 +176,9 @@ footer {
 .clearfix {
   overflow: auto;
   zoom: 1; }
+
+section:last-of-type {
+  padding-bottom: 130px; }
 
 .single-project {
   font-family: 'Montserrat', sans-serif;
@@ -214,3 +224,5 @@ footer {
 @media (max-width: 940px) {
   canvas {
     display: none; } }
+
+/*# sourceMappingURL=site.css.map */

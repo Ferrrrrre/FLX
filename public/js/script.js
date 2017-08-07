@@ -1,18 +1,19 @@
 $(function(){
 	console.log("Engines are GO!");
-
-	var grid = $('.grid').isotope({
-		  // options
-		  itemSelector: '.item-container',
+    if($('.grid').length){
+        var grid = $('.grid').isotope({
+          // options
+          itemSelector: '.item-container',
           masonry: {
 
           },
           sortBy: 'random'
-	});
+        });
 
-    grid.imagesLoaded().progress( function() {
-        grid.isotope('layout');
-    });
+        grid.imagesLoaded().progress( function() {
+            grid.isotope('layout');
+        });
+    }
 
     $('.filter-button-group').on( 'click', 'button', function() {
         var filterValue = $(this).attr('data-filter');

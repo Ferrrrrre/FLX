@@ -11,7 +11,8 @@ img{
 }
 
 body{
-	
+	position: relative;
+	min-height: 100vh;
 }
 
 strong{
@@ -197,6 +198,9 @@ footer{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	line-height: 32px;
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 60px);
 
 	&:before{
 		content: "";
@@ -229,6 +233,10 @@ footer{
 .clearfix {
   overflow: auto;
   zoom: 1;
+}
+
+section:last-of-type{
+	padding-bottom: 130px;
 }
 
 // PROJECT PAGE =======================
