@@ -159,7 +159,7 @@ h1, h2{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 
-	&:hover{
+	&:hover, &.is-checked{
 		color: $theme_color;
 		background-color: white;
 	}
