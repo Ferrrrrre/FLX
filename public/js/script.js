@@ -1,5 +1,11 @@
-$(function(){
+$(document).ready( function(){
+
 	console.log("Engines are GO!");
+
+    $(window).on('resize', function(){
+      $('.eqHeight').matchHeight();
+    });
+
     if($('.grid').length){
         var grid = $('.grid').isotope({
           // options
@@ -11,7 +17,7 @@ $(function(){
         });
 
         grid.imagesLoaded().progress( function() {
-            grid.isotope('layout');
+          grid.isotope('layout');
         });
     }
 
@@ -30,5 +36,7 @@ $(function(){
     });
 
 });
+
+
 
 

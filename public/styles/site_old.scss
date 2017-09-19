@@ -1,0 +1,338 @@
+$theme_color: rgb(133, 214, 45);
+$theme_gutter: 25px;
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+img{
+	max-width: 100%;
+}
+
+body{
+	position: relative;
+	min-height: 100vh;
+}
+
+strong{
+	font-weight: inherit;
+}
+
+h1{
+	margin: 0;
+}
+
+.fancy{
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: -9999;
+}
+
+.background{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	z-index: -9999;
+
+	&:before{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		content: " ";
+	}
+
+}
+
+.background__intro{
+	background-image: url('../images/background.jpg');
+
+	&:before{
+		background-color: rgba(0,0,0,0.4);
+	}
+}
+
+
+div[class^="border"]{
+	position: fixed;
+	background-color: white;
+	z-index: 9999;
+}
+
+.intro{
+	z-index: -1;
+	height: 100vh;
+	position: relative;
+	color: white;
+
+	.brand{
+		text-align: center;
+		position: fixed;
+		top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	    width: 80vw;
+	    height: 50vh;
+
+	    h1{
+	    	font-size: 10vw;
+	    }
+	}
+}
+
+.brand{
+	text-shadow: rgba(0,0,0,0.5) 1px 1px 1px;
+
+	h1{
+		margin: 0;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		
+	}
+
+	h2{
+		margin: $theme_gutter;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 100;
+	}
+
+	span{
+		color: $theme_color;
+	}
+}
+
+.content{
+	background-color: whitesmoke;
+	box-shadow: rgba(0,0,0,0.8) 0px 0px 11px -2px
+}
+
+.me{
+	background-color: white;
+	background-image: url('../images/me_prof_transparent.png');
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.about__inner{
+	padding: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	text-align: justify;
+
+	p{
+		margin-bottom: 15px;
+		line-height: 30px;
+	}
+}
+
+.greeting{
+	font-size: 2.45em;
+	color: $theme_color;
+}
+
+
+.cv{
+	display: inline-block;
+	padding: 5px;
+	border: 2px solid $theme_color;
+	background-color: $theme_color;
+	color: white;
+
+	&:hover{
+		color: $theme_color;
+		background-color: white;
+	}
+}
+
+.quote{
+	font-style: italic;
+}
+
+.skills{
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+.skills__inner{
+	color: white;
+	padding: 30px;
+}
+
+
+
+.background__skills{
+	z-index: -1;
+	background-image: url('https://static.pexels.com/photos/128639/pexels-photo-128639.jpeg');
+
+	&:before{
+		background-color: rgba(0,0,0,0.5);
+	}
+}
+
+.work{
+	background-color: white;
+}
+
+.item{
+	margin: 5px;
+}
+
+.choose{
+	text-align: center;
+}
+
+h3{
+		padding: 30px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2.5em;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $theme_color;
+	}
+
+.button-group{
+	padding: 0 0 30px 0;
+}
+
+button{
+	background-color: transparent;
+	text-transform: uppercase;
+	padding: 5px;
+	border: 2px solid $theme_color;
+	color: $theme_color;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	margin: 0 5px;
+
+	&:hover, &.is-checked{
+		color: white;
+		background-color: $theme_color;
+	}
+}
+
+footer{
+	background-color: whitesmoke;
+	padding: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	line-height: 32px;
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 60px);
+
+	&:before{
+		content: "";
+		width: 100%;
+		background-color: red;
+		height: 5px;
+	}
+
+	a{
+		color: lightgrey;
+
+		&:hover{
+			color: $theme_color;
+		}
+	}
+
+	.right a{
+		font-size: 2.2em;
+		margin: 0 5px;	
+	}
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+section:last-of-type{
+	padding-bottom: 130px;
+}
+
+// PROJECT PAGE =======================
+
+.single-project{
+	font-family: 'Montserrat', sans-serif;
+	padding: 30px;
+
+	.back{
+		text-transform: uppercase;
+		font-weight: 100;
+		color: lightgrey;
+
+		&:hover{
+			color: $theme_color;
+		}
+	}
+
+	.project-title{
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $theme_color;
+
+		&:after{
+			margin: 30px 0 0 0;
+			display: block;
+			content: "";
+			background-color: lightgrey;
+			opacity: .5;
+			width: 40%;
+			height: 2px;
+		}
+	}
+
+	.project-info{
+		padding-right: 15px;
+
+		h1{
+			font-weight: 100;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		p, h6, ol{
+			font-family: 'Open Sans', sans-serif;
+			line-height: 25px;
+			margin: 15px 0;
+			font-weight: 100;
+		}
+
+		iframe{
+			width: 100%;
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+		a{
+			color: $theme_color;
+		}
+
+		em{
+			font-style: italic;
+		}
+	}
+}
+
+
+@media (max-width: 940px){
+	canvas{
+		display: none;
+	}
+}

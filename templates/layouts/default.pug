@@ -17,7 +17,7 @@ html
 		link(href="https://unpkg.com/purecss@1.0.0/build/pure-min.css", rel="stylesheet")
 		link(href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css", rel="stylesheet")
 		//- Customise the stylesheet for your site by editing /public/styles/site.sass
-		link(href="/styles/site.css", rel="stylesheet")
+		link(href="http://localhost:8000/styles/site.css", rel="stylesheet")
 
 		link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900", rel="stylesheet")
 		link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700", rel="stylesheet")
@@ -99,6 +99,8 @@ html
 			script(src='/keystone/js/content/editor.js')
 
 		//- Add scripts that are globally required by your site here.
+		script(src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js")
+		script(src="/js/eqHeights.js")
 		script(src="/js/script.js")
 		//- script(src="/js/pixie.js")
 
